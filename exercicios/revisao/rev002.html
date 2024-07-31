@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão 2</title>
+  <style>
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  
+  <script>
+    var nome = window.prompt('Digite seu nome: ')
+    window.alert(`Seja muito bem-vindo(a) ${nome}!`)
+    document.write(`<p>Olá <span style="background-color: black; color: white; padding: 5px 10px;">${nome}!</span></p>`)
+    document.write(`<p>Seu nome tem <strong>${nome.length}</strong> letras</p>`)
+    document.write(`Seu nome em maiúsculo fica <strong>${nome.toUpperCase()}</strong>`)
+    document.write(`<p>Seu nome em minúsculo fica <strong>${nome.toLowerCase()}</strong></p>`)
+    var sal = Number(window.prompt('Digite seu salário: '))
+    document.write(`<p>Seu salário é de <span style="background-color: darkgreen; color: white; padding: 5px 10px;">${sal.toLocaleString('pt-BR',{style:'currency', currency:'BRL'})}</span></p>`)
+    var n1 = Number(window.prompt('Digite um número: '))
+    var n2 = Number(window.prompt('Digite mais um número: '))
+    var soma = n1 + n2
+    var subtracao = n1 - n2
+    var multiplicacao = n1 * n2
+    var divisao = n1 / n2
+    document.write(`<p>Você digitou o número <span style="background-color: black; color: white; padding: 5px 10px; border-radius: 50%; border: 2px solid white; outline: 1px solid black;"><strong>${n1}</strong></span> e o número <span style="background-color: black; color: white; padding: 5px 10px; border-radius: 50%; border: 2px solid white; outline: 1px solid black;"><strong>${n2}</strong></span></p>`)
+    document.write('<p>Logo:</p>')
+    document.write(`<p>Quando você receber uma pergunta de quanto que fica <strong>${n1}</strong> + <strong>${n2}</strong> aqui está a resposta = <span style="background-color: black; color: white; padding: 5px 10px; border-radius: 50%; border: 2px solid white; outline: 1px solid black;">${soma}</span></p>`)
+    document.write('<p>ou</p>')
+    document.write(`Quando te questionarem quanto que fica <strong>${n1}</strong> - <strong>${n2}</strong> diga esse número -> <span style="background-color: black; color: white; padding: 5px 10px; border-radius: 50%; border: 2px solid white; outline: 1px solid black;">${subtracao}</span>`)
+    document.write('<p>ou</p>')
+    document.write(`Quando você for perguntado qual é o resultado de <strong>${n1}</strong> x <strong>${n2}</strong> fale esse número -> -> <span style="background-color: black; color: white; padding: 5px 10px; border-radius: 50%; border: 2px solid white; outline: 1px solid black;">${multiplicacao}</span>`)
+    document.write('<p>ou</p>')
+    document.write(`<p>Quando você precisar responder qual é o valor de <strong>${n1}</strong> / <strong>${n2}</strong> responda isso: <span style="background-color: black; color: white; padding: 5px 10px; border-radius: 50%; border: 2px solid white; outline: 1px solid black;">${divisao}</span></p>`)
+    document.write('<span style="background-color: blue; color: white; padding: 5px 10px; border-radius: 50%;">OBS:</span> Me agradeça depois')
+  </script>
+</body>
+</html>
