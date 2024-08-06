@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Nacionalidade</title>
+  <style>
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- TÍTULO -->
+  <h1>Sistema de Nacionalidade</h1>
+  <!-- SISTEMA DE ESCOLHA DE NACIONALIDADE -->
+  <label for="inac">Nacionalidade: </label>
+  <select name="nac" id="inac">
+    <option value="">--- Escolha ---</option>
+    <optgroup label="América Do Norte">
+      <option value="Canadá">Canadá</option>
+      <option value="Estados Unidos">Estados Unidos</option>
+      <option value="México">México</option>
+    </optgroup>
+    <optgroup label="América Do Sul">
+      <option value="Brasil">Brasil</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Paraguai">Paraguai</option>
+    </optgroup>
+    <optgroup label="Europa">
+      <option value="Inglaterra">Inglaterra</option>
+      <option value="França">França</option>
+      <option value="Alemanha">Alemanha</option>
+    </optgroup>
+    <optgroup label="África">
+      <option value="Egito">Egito</option>
+      <option value="Angola">Angola</option>
+      <option value="África do Sul">África do Sul</option>
+    </optgroup>
+    <optgroup label="Ásia">
+      <option value="Rússia">Rússia</option>
+      <option value="China">China</option>
+      <option value="Índia">Índia</option>
+    </optgroup>
+  </select>
+  <!-- BOTÃO DE VERIFICAR -->
+  <input type="submit" value="Verificar" onclick="verificar()">
+  <!-- RESULTADO -->
+  <div id="res">
+  </div>
+  <!-- PROGRAMAÇÃO -->
+  <script>
+    function verificar() {
+      var nacionalidade = window.document.getElementById('inac')
+      var res = window.document.getElementById('res')
+      if (nacionalidade.value == 'Canadá') {
+        res.innerHTML = `<p>Living in <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>You are <strong>Canadian</strong></p>'
+      } else if (nacionalidade.value == 'Estados Unidos') {
+        res.innerHTML = `<p>Living in <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>You are <strong>American</strong></p>'
+      } else if (nacionalidade.value == 'México') {
+        res.innerHTML = `<p>Viviendo en <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>Tú eres <strong>Mexicano</strong></p>'
+      } else if (nacionalidade.value == 'Brasil') {
+        res.innerHTML = `<p>Vivendo no <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>Você é <strong>Brasileiro</strong></p>'
+      } else if (nacionalidade.value == 'Argentina') {
+        res.innerHTML = `<p>Vivir en <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>Eres <strong>Argentino</strong></p>'
+      } else if (nacionalidade.value == 'Paraguai') {
+        res.innerHTML = `<p>Vivir en <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>Eres <strong>Paraguaio</strong></p>'
+      } else if (nacionalidade.value == 'Inglaterra') {
+        res.innerHTML = `<p>Living in <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>You are <strong>English</strong></p>'
+      } else if (nacionalidade.value == 'França') {
+        res.innerHTML = `<p>Vivre en <strong>France</strong></p>`
+        res.innerHTML += '<p>Tu es <strong>Français</strong></p>'
+      } else if (nacionalidade.value == 'Alemanha') {
+        res.innerHTML = `<p>Leben in <strong>Deutschland</strong></p>`
+        res.innerHTML += '<p>Bist du <strong>Deutscher</strong></p>'
+      } else if (nacionalidade.value == 'Egito') {
+        res.innerHTML = `<p>يعيش في <strong>مصر</strong></p>`
+        res.innerHTML += '<p>أنت<strong>مصري</strong></p>'
+      } else if (nacionalidade.value == 'Angola') {
+        res.innerHTML = `<p>Vivendo na <strong>${nacionalidade.value}</strong></p>`
+        res.innerHTML += '<p>Você é <strong>Angolano</strong></p>'
+      } else if (nacionalidade.value == 'África do Sul') {
+        res.innerHTML = `<p>Woon in <strong>Suid-Afrika</strong></p>`
+        res.innerHTML += '<p>Is jy <strong>Afrikaans</strong></p>'
+      } else if (nacionalidade.value == 'Rússia') {
+        res.innerHTML = `<p>Жизнь в <strong>России</strong></p>`
+        res.innerHTML += '<p>Вы<strong>русский</strong></p>'
+      } else if (nacionalidade.value == 'China') {
+        res.innerHTML = `<p>生活在 <strong>中國</strong></p>`
+        res.innerHTML += '<p>你是<strong>中國人</strong></p>'
+      } else if (nacionalidade.value == 'Índia') {
+        res.innerHTML = `<p>में रहने वाले <strong>भारत</strong></p>`
+        res.innerHTML += '<p>तुम हो<strong>भारतीय</strong></p>'
+      }
+    }
+  </script>
+</body>
+</html>
