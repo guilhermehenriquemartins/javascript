@@ -10,13 +10,25 @@ function contar() {
   res.innerHTML = ''
   if (txti.value.length == 0 || txtf.value.length == 0 || txtp.value.length == 0) {
     res.innerHTML = 'Um ou mais campos não foram preenchidos, tente novamente!'
-  } else if (passo == 0) {
+  } else if (inicio < fim) {
+    res.innerHTML = 'Contando: <br>'
+    if (passo == 0) {
     window.alert('Passo Inválido! Considerando PASSO 1')
     passo = 1
-    if (inicio < fim) {
-      for (inicio; inicio <= fim; inicio += passo) {
-        res.innerHTML += ''
-      }
+  }
+    for (inicio ; inicio <= fim ; inicio += passo) {
+      res.innerHTML += `${inicio} \u{1F449} `
     }
-  } 
+    res.innerHTML += `\u{1F3C1}`
+  } else if (inicio > fim) {
+    res.innerHTML = 'Contando: <br>'
+    if (passo == 0) {
+      window.alert('Passo Inválido! Considerando PASSO 1')
+      passo = 1
+    }
+    for (inicio ; inicio >= fim ; inicio -= passo) {
+      res.innerHTML += `${inicio} \u{1F449} `
+    }
+    res.innerHTML += `\u{1F3C1}`
+  }
 }
