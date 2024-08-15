@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/first.css">
+  <title>Sistema de Nacionalidade</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Nacionalidade</h1>
+  </header>
+  <main>
+    <div id="formulario">
+      <label for="inac">Nacionalidade: </label>
+      <select name="nac" id="inac">
+        <option value="" selected>--- Escolha ---</option>
+        <optgroup label="América do Norte">
+          <option value="Canadá">Canadá</option>
+          <option value="Estados Unidos">Estados Unidos</option>
+          <option value="México">México</option>
+        </optgroup>
+        <optgroup label="América do Sul">
+          <option value="Argentina">Argentina</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Paraguai">Paraguai</option>
+        </optgroup>
+        <optgroup label="Europa">
+          <option value="Inglaterra">Inglaterra</option>
+          <option value="Espanha">Espanha</option>
+          <option value="Alemanha">Alemanha</option>
+        </optgroup>
+        <optgroup label="África">
+          <option value="Angola">Angola</option>
+          <option value="Egito">Egito</option>
+          <option value="Madagascar">Madagascar</option>
+        </optgroup>
+        <optgroup label="Ásia">
+          <option value="Russia">Russia</option>
+          <option value="China">China</option>
+          <option value="Índia">Índia</option>
+        </optgroup>
+      </select>
+      <input type="submit" id="botao" value="Verificar" onmouseenter="entrou()" onmouseout="saiu()" onmousedown="clicou()" onmouseup="desclicou()" onmousemove="dentro()" onclick="verificar()">
+    </div>
+    <div id="res">
+      <img src="imagem.png" alt="imagem">
+    </div>
+  </main>
+  <footer>
+    <p>&copy; GuilhermeHenrique</p>
+  </footer>
+
+  <script src="programacao.js"></script>
+</body>
+</html>
