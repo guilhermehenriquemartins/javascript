@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="flag.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/first.css">
+  <title>Contador</title>
+</head>
+<body>
+  <header>
+    <h1>Contador</h1>
+  </header>
+  <main>
+    <section id="formulario">
+      <p>
+        <label for="txti">Início: </label>
+        <input type="number" name="n1" id="txti">
+      </p>
+      <p>
+        <label for="txtf">Fim: </label>
+        <input type="number" name="n2" id="txtf">
+      </p>
+      <p>
+        <label for="txtp">Passo: </label>
+        <input type="number" name="n3" id="txtp">
+      </p>
+      <p>
+        <input id="botao" type="submit" value="Contar" onmouseenter="entrar()" onmouseout="saiu()" onmousedown="clicou()" onmouseup='desclicou()' onmousemove="dentro()" onclick="contar()">
+      </p>
+    </section>
+    <section id="res">
+      Preparando a contagem...
+    </section>
+  </main>
+  <footer>
+    <p>&copy; GuilhermeHenrique</p>
+  </footer>
+
+  <script src="programacao.js"></script>
+</body>
+</html>
