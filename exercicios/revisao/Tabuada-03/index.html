@@ -12,10 +12,21 @@
     <h1>Tabuada</h1>
   </header>
   <main>
-
+    <div id="formulario">
+      <label for="txtn">Número:</label>
+      <input type="number" name="txtnum" id="txtn">
+      <input type="submit" id="botao" value="Gerar Tabuada" onmouseenter="entrou()" onmouseout="saiu()" onmousedown="clicou()" onmousemove="mover()" onclick="tabuada()">
+    </div>
+    <div id="res">
+      <select name="txtab" id="itxtab" size="10">
+        
+      </select>
+    </div>
   </main>
   <footer>
-
+    <p>&copy; GuilhermeHenrique</p>
   </footer>
+
+  <script src="programacao.js"></script>
 </body>
 </html>
