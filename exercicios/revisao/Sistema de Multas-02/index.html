@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="car.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/first.css">
+  <title>Sistema de Multas</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Multas</h1>
+  </header>
+  <main>
+    <div id="formulario">
+      <label for="ivel">Velocidade do Carro: </label>
+      <input type="number" name="vel" id="ivel"> Km/h
+      <input type="submit" id="botao" value="Verificar" onmouseenter="entrou()" onmouseout="saiu()" onmousedown="clicou()" onmousemove="moveu()" onclick="verificar()">
+    </div>
+    <div id="res">
+
+    </div>
+  </main>
+  <footer>
+    <p>&copy; GuilhermeHenrique</p>
+  </footer>
+
+  <script src="programacao.js"></script>
+</body>
+</html>
