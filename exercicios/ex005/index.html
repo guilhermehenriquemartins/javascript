@@ -14,11 +14,16 @@
     <div id="formulario">
       <label for="txtn">Número (entre 1 e 100): </label>
       <input type="number" name="txn" id="txtn" min="1" max="100">
-      <input id="botao1" type="submit" value="Adicionar" onmouseenter="entrou()" onmouseout="saiu()" onmousedown="clicou()" onmousemove="moveu()">
+      <input id="botao1" type="submit" value="Adicionar" onmouseenter="entrou()" onmouseout="saiu()" onmousedown="clicou()" onmousemove="moveu()" onclick="adicionar()">
+    </div>
+    <div id="numbers">
+      <select name="txtres" id="ires" size="5">
+
+      </select>
+      <input id="botao2" type="submit" value="Finalizar" onmouseenter="entrar()" onmouseout="sair()" onmousedown="clicar()" onmousemove="mover()" onclick="finalizar()">
     </div>
     <div id="res">
-      <select name="txtres" id="res" size="5"></select>
-      <input id="botao2" type="submit" value="Finalizar">
+
     </div>
   </main>
   <footer>

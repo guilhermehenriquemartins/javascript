@@ -42,8 +42,16 @@ input[type='submit'] {
   border-radius: 5px;
 }
 
+div#numbers {
+  margin-top: 20px;
+}
+
 div#res {
   margin-top: 20px;
+}
+
+div#res p {
+  margin-bottom: 10px;
 }
 
 select {
