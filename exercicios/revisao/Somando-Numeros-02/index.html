@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="numbers.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/first.css">
+  <title>Somando Números</title>
+</head>
+<body>
+  <header>
+    <h1>Somando Números</h1>
+  </header>
+  <main>
+    <div id="formulario">
+      <input type="number" name="txtn1" id="itxtn1" placeholder="Digite um número"> + <input type="number" name="txtn2" id="itxtn2" placeholder="Digite um número"> <input type="submit" value="Somar" id="botao" onmouseenter="entrou()" onmouseout="saiu()" onmousedown="clicou()" onmousemove="moveu()" onclick="somar()">
+    </div>
+    <div id="res">
+    </div>
+  </main>
+  <footer>
+    <p>&copy; GuilhermeHenrique</p>
+  </footer>
+
+  <script src="programacao.js"></script>
+</body>
+</html>
